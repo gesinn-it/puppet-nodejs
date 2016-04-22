@@ -96,6 +96,7 @@ define nodejs::install (
 
     $node_arch = $::hardwaremodel ? {
       /.*64.*/ => 'x64',
+      armv71   => 'armv71',
       default  => 'x86',
     }
 
